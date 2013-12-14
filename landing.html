@@ -1,0 +1,96 @@
+<!doctype html>
+
+<style type="text/css">
+
+tr {outline: thin solid black;}
+
+</style>
+
+
+<script language='javascript'>
+
+
+names = ["John Smith", "Jane Doe"];
+
+goals = ["Become a zillionaire", "Win American Idol"];
+
+
+function rotate() {
+	var loop = 1;
+	while (true) {
+		setTimeout(display(1),3000);
+		loop += 1;
+	}
+
+}
+
+function display(id) {
+
+
+	var name = document.getElementById('marq_name');
+	if ( id % 2 == 0) {
+		name.innerHTML = 'Joe';
+
+	} else {
+		
+		name.innerHTML = 'Ramona';
+
+	}
+
+}
+
+</script>
+
+
+
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+		<title>Toastmasters International - District 28 ONE Goal 2014</title>
+	</head>
+
+	<body  >
+		<div id='header'>
+			<div >
+				<img src='tm-logo.jpg' style='width:100%'/>
+			</div>
+			<div class='container'  style='width:100%'>
+				
+				<table  style=';margin-top:-10px;margin-left:-15px;width:100%'>
+					<tr class='row'>
+						<td style='text-align:center;font-size:14pt'><a href='index.html'>Home</a></td>
+
+						<td style='text-align:center;font-size:14pt'><a href='sign_up.html'>Sign Up</a></td>
+						<td style='text-align:center;font-size:14pt'><a href='sign_in.html'>Sign In</a></td>
+						<td style='text-align:center;font-size:14pt'><a href='about.html'>About</a></td>
+					</tr>
+				</table>
+
+
+			</div>
+		</div>
+		
+		<h1 style='text-align:center;width:100%'>Toastmasters International - District 28 - ONE Goal 2014</h1>
+
+
+		<div>
+			<ul>
+			<li style='font-size:12pt'><a href='goal.html'>Create / Change My Goal</a></li>
+			<li style='font-size:12pt'><a href='goal.html'>Update Milestone Progress</a></li>
+			<li style='font-size:12pt'><a href='goal.html'>Change My Marquee Setting</a></li>
+		</div>
+
+
+		<br/>
+		<h2 style='margin-left:30px'> Goals of fellow District 28 Toastmasters</h2>
+		<div style='margin-left:30px;margin-top:30px;width:90%;height:200px;border:2px solid;border-radius:10px;border-color:#800000'>
+			<br/>
+			 <span id='marq_name' style='margin-left:20px;margin-top:20px;font-size:20pt;width:90%;'>John Smith</span> <br/><br/>
+			<em><span id='marq_goal' style='margin-left:20px;margin-top:20px;;font-size:20pt;width:90%;'>Give sales presentation to General Motors</span></em> 
+		</div>
+	 
+			
+	</body>
+
+</html>
