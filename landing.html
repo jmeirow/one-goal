@@ -1,43 +1,5 @@
 <!doctype html>
 
-<style type="text/css">
-
-tr {outline: thin solid black;}
-
-</style>
-
-
-<script language='javascript'>
-
-
-names = ["John Smith", "Jane Doe"];
-
-goals = ["Become a zillionaire", "Win American Idol"];
-
-
-function rotate() {
-	var loop = 1;
-	while (true) {
-		setTimeout(display(1),3000);
-		loop += 1;
-	}
-
-}
-
-function display(id) {
-
-
-	var name = document.getElementById('marq_name');
-	if ( id % 2 == 0) {
-		name.innerHTML = 'Joe';
-
-	} else {
-		
-		name.innerHTML = 'Ramona';
-
-	}
-
-}
 
 </script>
 
@@ -83,14 +45,81 @@ function display(id) {
 
 
 		<br/>
-		<h2 style='margin-left:30px'> Goals of fellow District 28 Toastmasters</h2>
-		<div style='margin-left:30px;margin-top:30px;width:90%;height:200px;border:2px solid;border-radius:10px;border-color:#800000'>
+		<div style='
+				font-size:18px;
+				height:50px;
+				margin-left:20px;
+				border-top-left-radius:10px;
+				border-top-right-radius:10px;
+				width:400px;
+				background-color:maroon;
+				color:white;
+				margin-left:30px;
+				'>
+				<br/>
+				<span style='margin-top:10px;margin-left:120px'>
+					ONE Goal Marquee
+				</span>
+				</div>
+		<div style='
+			font-size:18px;
+			margin-left:30px;
+			width:90%;
+			height:200px;
+			border-bottom-left-radius:10px;
+			border-bottom-right-radius:10px;
+			border-top-right-radius:10px;
+			border:2px solid;
+			border-color:#800000'>
 			<br/>
-			 <span id='marq_name' style='margin-left:20px;margin-top:20px;font-size:20pt;width:90%;'>John Smith</span> <br/><br/>
-			<em><span id='marq_goal' style='margin-left:20px;margin-top:20px;;font-size:20pt;width:90%;'>Give sales presentation to General Motors</span></em> 
+			 <span 	id='marq_name' 
+			 		style='
+			 			margin-left:30px;
+			 			margin-top:20px;
+			 			font-size:20pt;
+			 			width:90%;'>John Smith</span> <br/><br/>
+			<em><span id='marq_goal' style='margin-left:20px;margin-top:20px;;font-size:20pt;width:90%;'>Make sales presentation to General Motors</span></em> 
 		</div>
 	 
 			
 	</body>
 
 </html>
+<style type="text/css">
+
+tr {outline: thin solid black;}
+
+</style>
+
+
+<script language='javascript'>
+
+
+names = ["John Smith", "Jane Doe"];
+
+goals = ["Become a zillionaire", "Win American Idol"];
+
+
+function rotate() {
+	var loop = 1;
+	while (true) {
+		setTimeout(display(1),3000);
+		loop += 1;
+	}
+
+}
+
+function display(id) {
+
+
+	var name = document.getElementById('marq_name');
+	if ( id % 2 == 0) {
+		name.innerHTML = 'Joe';
+
+	} else {
+		
+		name.innerHTML = 'Ramona';
+
+	}
+
+}
